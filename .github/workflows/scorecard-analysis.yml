@@ -6,11 +6,11 @@ on:
     # Weekly on Saturdays.
     - cron: '30 1 * * 6'
   push:
-    branches: [main, master]
+    branches: [ $default-branch ]
   
   # All branches are supported.
   pull_request:
-    branches: [main, master]
+    branches: [ $default-branch ]
 
 permissions: read-all
 
