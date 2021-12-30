@@ -26,7 +26,8 @@ jobs:
         uses: actions/checkout@v1
 
       - name: "Run analysis"
-        uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
+        #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
+        uses: laurentsimon/scorecard-action@feat/dockerfile
         #uses: ossf/scorecard-action@test/dogfoodv3
         with:
           results_file: results.sarif
