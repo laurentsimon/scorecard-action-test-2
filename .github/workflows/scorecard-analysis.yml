@@ -26,7 +26,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: "Run analysis"
-        uses: laurentsimon/action-example@b3f78348b19c4f2302644dd90a0feaefd97645b6
+        uses: laurentsimon/action-example@ad71dd2dc9fa23e79cb3b0bbd2a3cdc81784b231
         with:
           results_file: results.sarif
           results_format: sarif
