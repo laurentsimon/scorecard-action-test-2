@@ -47,3 +47,5 @@ RUN echo hi && \
 
 RUN bash /tmp/file1 && \
 	echo bla
+
+RUN /tmp/file3
