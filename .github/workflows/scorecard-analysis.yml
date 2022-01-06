@@ -29,8 +29,8 @@ jobs:
         #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
         #uses: laurentsimon/scorecard-action@feat/dockerfile
         #uses: ossf/scorecard-action@test/dogfoodv3
-        #uses: laurentsimon/scorecard-action@feat/bump
-        uses: ossf/scorecard-action@a15210fac3c3c5afe56b100acbb9bbd6a01523df
+        uses: laurentsimon/scorecard-action@test/emptyfilename
+        #uses: ossf/scorecard-action@a15210fac3c3c5afe56b100acbb9bbd6a01523df
         with:
           results_file: results.sarif
           results_format: sarif
