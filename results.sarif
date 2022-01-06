@@ -4,7 +4,7 @@
   "runs": [
     {
       "automationDetails": {
-        "id": "supply-chain/branch-protection/unknown-06 Jan 22 20:23 +0000"
+        "id": "supply-chain/branch-protection/unknown-06 Jan 22 20:34 +0000"
       },
       "tool": {
         "driver": {
@@ -55,7 +55,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -69,7 +69,7 @@
     },
     {
       "automationDetails": {
-        "id": "supply-chain/local/unknown-06 Jan 22 20:23 +0000"
+        "id": "supply-chain/local/unknown-06 Jan 22 20:34 +0000"
       },
       "tool": {
         "driver": {
@@ -280,7 +280,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -300,7 +300,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -333,6 +333,33 @@
               },
               "message": {
                 "text": "GitHub-owned action not pinned by hash"
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "PinnedDependenciesID",
+          "ruleIndex": 4,
+          "message": {
+            "text": "third-party action not pinned by hash"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "region": {
+                  "startLine": 32,
+                  "endLine": 32,
+                  "snippet": {
+                    "text": "laurentsimon/scorecard-action@test/emptyfilename"
+                  }
+                },
+                "artifactLocation": {
+                  "uri": ".github/workflows/scorecard-analysis.yml",
+                  "uriBaseId": "%SRCROOT%"
+                }
+              },
+              "message": {
+                "text": "third-party action not pinned by hash"
               }
             }
           ]
@@ -611,7 +638,7 @@
     },
     {
       "automationDetails": {
-        "id": "supply-chain/online-scm/unknown-06 Jan 22 20:23 +0000"
+        "id": "supply-chain/online-scm/unknown-06 Jan 22 20:34 +0000"
       },
       "tool": {
         "driver": {
@@ -938,7 +965,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -958,7 +985,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -978,7 +1005,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -998,7 +1025,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -1018,7 +1045,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -1038,7 +1065,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -1058,7 +1085,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
@@ -1078,7 +1105,7 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 0
                 },
                 "artifactLocation": {
                   "uri": " ",
