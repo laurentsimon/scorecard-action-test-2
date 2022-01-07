@@ -4,7 +4,7 @@
   "runs": [
     {
       "automationDetails": {
-        "id": "supply-chain/branch-protection/unknown-07 Jan 22 02:20 +0000"
+        "id": "supply-chain/branch-protection/unknown-07 Jan 22 02:32 +0000"
       },
       "tool": {
         "driver": {
@@ -69,7 +69,7 @@
     },
     {
       "automationDetails": {
-        "id": "supply-chain/local/unknown-07 Jan 22 02:20 +0000"
+        "id": "supply-chain/local/unknown-07 Jan 22 02:32 +0000"
       },
       "tool": {
         "driver": {
@@ -280,10 +280,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#dependency-update-tool",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -300,10 +300,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#license",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -638,7 +638,7 @@
     },
     {
       "automationDetails": {
-        "id": "supply-chain/online-scm/unknown-07 Jan 22 02:20 +0000"
+        "id": "supply-chain/online-scm/unknown-07 Jan 22 02:32 +0000"
       },
       "tool": {
         "driver": {
@@ -965,10 +965,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#ci-tests",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -985,10 +985,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#cii-best-practices",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1005,10 +1005,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#code-review",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1025,10 +1025,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#contributors",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1045,10 +1045,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#fuzzing",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1065,10 +1065,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#packaging",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1085,10 +1085,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#sast",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1105,10 +1105,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#security-policy",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
