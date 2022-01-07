@@ -4,7 +4,7 @@
   "runs": [
     {
       "automationDetails": {
-        "id": "supply-chain/branch-protection/unknown-07 Jan 22 02:32 +0000"
+        "id": "supply-chain/branch-protection/unknown-07 Jan 22 02:40 +0000"
       },
       "tool": {
         "driver": {
@@ -58,7 +58,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -69,7 +69,7 @@
     },
     {
       "automationDetails": {
-        "id": "supply-chain/local/unknown-07 Jan 22 02:32 +0000"
+        "id": "supply-chain/local/unknown-07 Jan 22 02:40 +0000"
       },
       "tool": {
         "driver": {
@@ -283,7 +283,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -303,7 +303,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -638,7 +638,7 @@
     },
     {
       "automationDetails": {
-        "id": "supply-chain/online-scm/unknown-07 Jan 22 02:32 +0000"
+        "id": "supply-chain/online-scm/unknown-07 Jan 22 02:40 +0000"
       },
       "tool": {
         "driver": {
@@ -968,7 +968,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -988,7 +988,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1008,7 +1008,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1028,7 +1028,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1048,7 +1048,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1068,7 +1068,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1088,7 +1088,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
@@ -1108,7 +1108,7 @@
                   "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
+                  "uri": "docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
