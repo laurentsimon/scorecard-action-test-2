@@ -55,10 +55,10 @@
             {
               "physicalLocation": {
                 "region": {
-                  "startLine": 1
+                  "startLine": 57
                 },
                 "artifactLocation": {
-                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md#branch-protection",
+                  "uri": "https://github.com/ossf/scorecard/blob/main/docs/checks.md",
                   "uriBaseId": "%SRCROOT%"
                 }
               }
