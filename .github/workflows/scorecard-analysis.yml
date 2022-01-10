@@ -12,14 +12,14 @@ on:
   pull_request:
     branches: [ main, master ]
 
-#permissions: read-all
+permissions: read-all
 
 jobs:
   analysis:
     name: Scorecard analysis
     runs-on: ubuntu-latest
-    #permissions:
-    #  security-events: write
+    permissions:
+      security-events: write
     
     steps:
       - name: "Checkout code"
