@@ -8,6 +8,10 @@ jobs:
   my-job:
     name: My job name
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [6, 8, 10]
     steps:
       - name: my-step
-        run: echo "Hello World!"
+        # https://docs.github.com/en/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
+        run: echo "Hello World! ${{ matrix.node }}"
