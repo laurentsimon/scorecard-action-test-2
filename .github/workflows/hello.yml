@@ -16,4 +16,4 @@ jobs:
     steps:
       - name: my-step
         # https://docs.github.com/en/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
-        run: echo "Hello World! ${{ matrix.node, matrix.node2 }}"
+        run: echo "Hello World! ${{ matrix.node }} - ${{ matrix.node2 }}"
