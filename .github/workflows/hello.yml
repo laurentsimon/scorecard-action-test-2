@@ -11,8 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node: [6, 8, 10]
+        node: [1, 2]
+        node2: [3, 4]
     steps:
-      - name: my-step - ${{ matrix.node }}
+      - name: my-step
         # https://docs.github.com/en/actions/learn-github-actions/managing-complex-workflows#using-a-build-matrix
-        run: echo "Hello World! ${{ matrix.node }}"
+        run: echo "Hello World! ${{ matrix.node, matrix.node2 }}"
