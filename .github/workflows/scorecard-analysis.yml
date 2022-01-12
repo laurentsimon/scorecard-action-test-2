@@ -1,4 +1,4 @@
-name: Scorecard analysis
+name: Scorecard workflow
 on: 
   # Only the default branch is supported.
   branch_protection_rule:
@@ -16,7 +16,7 @@ permissions: read-all
 
 jobs:
   analysis:
-    name: Scorecard analysis
+    name: Scorecard job
     runs-on: ubuntu-latest
     permissions:
       security-events: write
