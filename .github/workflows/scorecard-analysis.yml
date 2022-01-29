@@ -4,7 +4,8 @@ on:
   branch_protection_rule:
   schedule:
     # Weekly on Saturdays.
-    - cron: '30 1 * * 6'
+    #- cron: '30 1 * * 6'
+    - cron: '1 * * * *'
   push:
     branches: [ main, master ]
   
@@ -31,8 +32,8 @@ jobs:
         #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
         #uses: laurentsimon/scorecard-action@feat/defbranch
         #uses: ossf/scorecard-action@test/dogfoodv3
-        #uses: laurentsimon/scorecard-action@test/emptyfilename
-        uses: ossf/scorecard-action@c8416b0b2bf627c349ca92fc8e3de51a64b005cf
+        uses: laurentsimon/scorecard-action@bug/defaultbranch
+        #uses: ossf/scorecard-action@c8416b0b2bf627c349ca92fc8e3de51a64b005cf
         with:
           results_file: results.sarif
           results_format: sarif
