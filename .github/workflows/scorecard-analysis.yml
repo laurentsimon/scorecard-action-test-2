@@ -32,7 +32,7 @@ jobs:
         #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
         #uses: laurentsimon/scorecard-action@feat/defbranch
         #uses: ossf/scorecard-action@test/dogfoodv3
-        uses: laurentsimon/scorecard-action@debug/repojson
+        uses: ossf/scorecard-action@debug/repojson
         #uses: ossf/scorecard-action@cff09a8f052292a3366418be26dc50e9913407c0
         with:
           results_file: results.sarif
