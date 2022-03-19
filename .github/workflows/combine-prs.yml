@@ -48,6 +48,7 @@ jobs:
               repo: context.repo.repo
             });
             branches = [];
+            branches_id = [];
             prs = [];
             base_branch = null;
             for (const pull of pulls) {
@@ -85,6 +86,7 @@ jobs:
                 if (statusOK) {
                   console.log('Adding branch to array: ' + branch);
                   branches.push(branch);
+                  branches_id.push(pull['number'])
                   prs.push('#' + pull['number'] + ' ' + pull['title']);
                   base_branch = pull['base']['ref'];
                 }
@@ -99,6 +101,9 @@ jobs:
             core.setOutput('base-branch', base_branch);
             core.setOutput('prs-string', prs.join('\n'));
             
+            combined_ids = branches_id.join(' ')
+            core.setOutput('branch-ids', combined_ids.join(' '));
+            
             combined = branches.join(' ')
             console.log('Combined: ' + combined);
             return combined
@@ -106,11 +111,16 @@ jobs:
       - uses: actions/github-script@v3
         name: Close Original Pull Request
         env:
-          BRANCHES_TO_COMBINE: ${{ steps.fetch-branch-names.outputs.result }}
+          BRANCH_IDS_TO_CLOSE: ${{ steps.fetch-branch-names.outputs.branch-ids }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const prs = process.env.BRANCHES_TO_COMBINE.split(" ");
             prs.forEach(function (item, index) {
-              console.log('new[' + index + ']:' + item.replace('"', ''));
+              console.log('id[' + index + ']:' + item);
+              #await octokit.request('PATCH /repos/:owner/:repo/pulls/:pull_number', {
+              #  owner: context.repo.owner,
+              #  repo: context.repo.repo
+              #  pull_number: 42,
+              #});
             });
