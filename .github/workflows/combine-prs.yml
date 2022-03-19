@@ -112,5 +112,5 @@ jobs:
           script: |
             const prs = process.env.BRANCHES_TO_COMBINE.split(" ");
             prs.forEach(function (item, index) {
-              console.log(item + ' : ' + index);
+              console.log('item[' + index + ']: item);
             });
