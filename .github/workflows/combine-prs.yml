@@ -7,7 +7,7 @@ on:
       branchPrefix:
         description: 'Branch prefix to find combinable PRs based on'
         required: false
-        default: 'dependabot'
+        default: 'laurentsimon-patch'
       mustBeGreen:
         description: 'Only combine PRs that are green (status is success)'
         required: false
