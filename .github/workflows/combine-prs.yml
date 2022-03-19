@@ -123,7 +123,6 @@ jobs:
             github.rest.pulls.update({
               owner: context.repo.owner,
               repo: context.repo.repo
-              pull_number: 12,
-              state: 'closed'
+              pull_number: 12
             });
 
