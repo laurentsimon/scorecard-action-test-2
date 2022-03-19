@@ -174,6 +174,9 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
+            if (!process.env.BRANCH_IDS_TO_CLOSE){
+              return
+            }
             const prs = process.env.BRANCH_IDS_TO_CLOSE.split(" ");
             prs.forEach(function (item, index) {
               console.log('id[' + index + ']:' + item);
