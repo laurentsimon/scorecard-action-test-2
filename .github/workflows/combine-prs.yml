@@ -118,7 +118,7 @@ jobs:
             const prs = process.env.BRANCH_IDS_TO_CLOSE.split(" ");
             prs.forEach(function (item, index) {
               console.log('id[' + index + ']:' + item);
-              octokit.request('PATCH /repos/:owner/:repo/pulls/:pull_number', {
+              github.request('PATCH /repos/:owner/:repo/pulls/:pull_number', {
                 owner: context.repo.owner,
                 repo: context.repo.repo
                 pull_number: item,
