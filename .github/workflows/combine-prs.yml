@@ -102,7 +102,7 @@ jobs:
             core.setOutput('prs-string', prs.join('\n'));
             
             combined_ids = branches_id.join(' ')
-            core.setOutput('branch-ids', combined_ids.join(' '));
+            core.setOutput('branch-ids', combined_ids);
             
             combined = branches.join(' ')
             console.log('Combined: ' + combined);
