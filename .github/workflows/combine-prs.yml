@@ -153,12 +153,10 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            if [ -z "$PRS_STRING" ]
-            then
-              exit 0
-            fi
-            
             const prString = process.env.PRS_STRING;
+            if (!prString){
+              return
+            }
             const body = 'This PR was created by the Combine PRs action by combining the following PRs:\n' + prString;
             await github.pulls.create({
               owner: context.repo.owner,
