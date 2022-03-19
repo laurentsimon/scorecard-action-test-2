@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # TODO: use dependabot logins https://github.com/ahmadnassri/action-dependabot-auto-merge/blob/master/action/index.js#L21
     steps:
       - uses: actions/github-script@v5
         id: fetch-branch-names
@@ -55,7 +55,7 @@ jobs:
               const branch = pull['head']['ref'];
               console.log('Pull for branch: ' + branch);
               author = pull['user']['login'];
-              if (!['dependabot[bot]', 'dependabot-preview[bot]'].includes(author)) {
+              if (!['laurentsimon', 'naveensrinivasan'].includes(author)) {
                 console.log('Skipping PR #' + pull['number'] + ' authored by ' + author);
                 continue
               }
