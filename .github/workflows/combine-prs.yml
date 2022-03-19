@@ -11,7 +11,7 @@ on:
       mustBeGreen:
         description: 'Only combine PRs that are green (status is success)'
         required: false
-        default: false
+        default: 'false'
       combineBranchName:
         description: 'Name of the branch to combine PRs into'
         required: false
@@ -49,7 +49,7 @@ jobs:
               if (branch.startsWith('${{ github.event.inputs.branchPrefix }}')) {
                 console.log('Branch matched: ' + branch);
                 statusOK = true;
-                if(${{ github.event.inputs.mustBeGreen }}) {
+                if(${{ github.event.inputs.mustBeGreen }} == 'true') {
                   console.log('Checking green status: ' + branch);
                   const statuses = await github.paginate('GET /repos/{owner}/{repo}/commits/{ref}/status', {
                     owner: context.repo.owner,
