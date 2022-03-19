@@ -106,7 +106,7 @@ jobs:
       - uses: actions/github-script@v3
         name: Close Original Pull Request
         env:
-          BRANCHES_TO_COMBINE: "${{ steps.fetch-branch-names.outputs.result }}"
+          BRANCHES_TO_COMBINE: ${{ steps.fetch-branch-names.outputs.result }}
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
