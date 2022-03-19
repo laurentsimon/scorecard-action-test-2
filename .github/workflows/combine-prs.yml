@@ -56,7 +56,7 @@ jobs:
               console.log('Pull for branch: ' + branch);
               author = pull['user']['login'];
               dependabots = ['dependabot[bot]', 'dependabot-preview[bot]']
-              if (!dependabots.includes(author)) {
+              if (author != 'dependabot[bot]' && author != 'dependabot-preview[bot]') {
                 console.log('Skipping PR #' + pull['number'] + ' authored by ' + author);
                 continue
               }
