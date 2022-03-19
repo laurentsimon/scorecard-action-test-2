@@ -37,7 +37,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/github-script@v3
+      - uses: actions/github-script@v5
         id: fetch-branch-names
         name: Fetch branch names
         with:
@@ -108,7 +108,7 @@ jobs:
             console.log('Combined: ' + combined);
             return combined
 
-      - uses: actions/github-script@v3
+      - uses: actions/github-script@v5
         name: Close Original Pull Request
         env:
           BRANCH_IDS_TO_CLOSE: ${{ steps.fetch-branch-names.outputs.branch-ids }}
