@@ -102,10 +102,12 @@ jobs:
             combined = branches.join(' ')
             console.log('Combined: ' + combined);
             return combined
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2.3.3
         with:
           fetch-depth: 0
+
       # TODO: copy code that create the combined PR.
       - uses: actions/github-script@v3
         name: Close Original Pull Request
@@ -118,4 +120,3 @@ jobs:
             prs.forEach(function (item, index) {
               console.log(item + ' : ' + index);
             });
-        
