@@ -30,8 +30,8 @@ jobs:
 
       - name: "Run analysis"
         #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
-        uses: laurentsimon/scorecard-action@bug/nullpush
-        #uses: ossf/scorecard-action@test/dogfoodv3
+        #uses: laurentsimon/scorecard-action@bug/nullpush
+        uses: ossf/scorecard-action@c1aec4ac820532bab364f02a81873c555a0ba3a1
         #uses: ossf/scorecard-action@debug/repojson
         #uses: ossf/scorecard-action@c1aec4ac820532bab364f02a81873c555a0ba3a1
         with:
