@@ -29,18 +29,18 @@ jobs:
       - name: "Checkout code"
         uses: actions/checkout@v2
 
-      - name: "Run analysis"
-        #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
-        #uses: laurentsimon/scorecard-action@bug/nullpush
-        uses: laurentsimon/scorecard-action@feat/deftoken
-        #uses: ossf/scorecard-action@debug/repojson
-        #uses: ossf/scorecard-action@c1aec4ac820532bab364f02a81873c555a0ba3a1
-        with:
-          results_file: results.sarif
-          results_format: sarif
-          #repo_token: ${{ secrets.SCORECARD_READ_TOKEN }}
-          #repo_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_results: true #${{ !github.event.repository.private }}
+#       - name: "Run analysis"
+#         #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
+#         #uses: laurentsimon/scorecard-action@bug/nullpush
+#         uses: laurentsimon/scorecard-action@feat/deftoken
+#         #uses: ossf/scorecard-action@debug/repojson
+#         #uses: ossf/scorecard-action@c1aec4ac820532bab364f02a81873c555a0ba3a1
+#         with:
+#           results_file: results.sarif
+#           results_format: sarif
+#           #repo_token: ${{ secrets.SCORECARD_READ_TOKEN }}
+#           #repo_token: ${{ secrets.GITHUB_TOKEN }}
+#           publish_results: true #${{ !github.event.repository.private }}
 
       # https://docs.github.com/en/actions/advanced-guides/storing-workflow-data-as-artifacts
       # Optional.
