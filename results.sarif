@@ -4,7 +4,7 @@
   "runs": [
     {
       "automationDetails": {
-        "id": "supply-chain/local/unknown-03 May 22 23:57 +0000"
+        "id": "supply-chain/local/unknown-04 May 22 18:51 +0000"
       },
       "tool": {
         "driver": {
@@ -48,14 +48,17 @@
           "ruleId": "TokenPermissionsID",
           "ruleIndex": 0,
           "message": {
-            "text": "score is 0: job level 'contents' permission set to 'write'html link <a href=\"https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions,pin\" target=\"_blank\">Hello, world!</a>  -https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions,pin and [link](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions,pin)\nClick Remediation section below to solve this issue"
+            "text": "score is 0: job level 'contents' permission set to 'write'\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/main/main?enable=pin\nClick Remediation section below to solve this issue"
           },
           "locations": [
             {
               "physicalLocation": {
                 "region": {
                   "startLine": 31,
-                  "endLine": 31
+                  "endLine": 31,
+                  "snippet": {
+                    "text": "write"
+                  }
                 },
                 "artifactLocation": {
                   "uri": ".github/workflows/combine-prs.yml",
@@ -63,7 +66,7 @@
                 }
               },
               "message": {
-                "text": "job level 'contents' permission set to 'write'"
+                "text": "job level 'contents' permission set to 'write'\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/main/main?enable=pin"
               }
             }
           ]
@@ -72,7 +75,7 @@
           "ruleId": "TokenPermissionsID",
           "ruleIndex": 0,
           "message": {
-            "text": "score is 0: no top level permission definedhtml link <a href=\"https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions,pin\" target=\"_blank\">Hello, world!</a>  -https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions,pin and [link](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions,pin)\nClick Remediation section below to solve this issue"
+            "text": "score is 0: no top level permission defined\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/main/main?enable=pin\nClick Remediation section below to solve this issue"
           },
           "locations": [
             {
@@ -87,7 +90,7 @@
                 }
               },
               "message": {
-                "text": "no top level permission defined"
+                "text": "no top level permission defined\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/main/main?enable=pin"
               }
             }
           ]
