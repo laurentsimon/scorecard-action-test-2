@@ -48,7 +48,7 @@
           "ruleId": "TokenPermissionsID",
           "ruleIndex": 0,
           "message": {
-            "text": "score is 0: job level 'contents' permission set to 'write'\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/main/main?enable=pin\nClick Remediation section below to solve this issue"
+            "text": "score is 0: job level 'contents' permission set to 'write'\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/main/main?enable=pin)\nClick Remediation section below to solve this issue"
           },
           "locations": [
             {
