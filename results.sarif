@@ -4,7 +4,7 @@
   "runs": [
     {
       "automationDetails": {
-        "id": "supply-chain/local/unknown-04 May 22 19:12 +0000"
+        "id": "supply-chain/local/unknown-04 May 22 19:28 +0000"
       },
       "tool": {
         "driver": {
@@ -48,7 +48,7 @@
           "ruleId": "TokenPermissionsID",
           "ruleIndex": 0,
           "message": {
-            "text": "score is 0: job level 'contents' permission set to 'write'\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/combine-prs.yml/main?enable=permissions)\nClick Remediation section below to solve this issue"
+            "text": "score is 0: job level 'contents' permission set to 'write'\nRemediation tip: update your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/combine-prs.yml/main?enable=permissions)\nClick Remediation section below for further remediation help"
           },
           "locations": [
             {
@@ -66,7 +66,7 @@
                 }
               },
               "message": {
-                "text": "job level 'contents' permission set to 'write'\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/combine-prs.yml/main?enable=permissions)"
+                "text": "job level 'contents' permission set to 'write'\nRemediation tip: update your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/combine-prs.yml/main?enable=permissions)"
               }
             }
           ]
@@ -75,7 +75,7 @@
           "ruleId": "TokenPermissionsID",
           "ruleIndex": 0,
           "message": {
-            "text": "score is 0: no top level permission defined\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions)\nClick Remediation section below to solve this issue"
+            "text": "score is 0: no top level permission defined\nRemediation tip: update your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions)\nClick Remediation section below for further remediation help"
           },
           "locations": [
             {
@@ -90,7 +90,7 @@
                 }
               },
               "message": {
-                "text": "no top level permission defined\nupdate your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions)"
+                "text": "no top level permission defined\nRemediation tip: update your workflow using [https://app.stepsecurity.io](https://app.stepsecurity.io/secureworkflow/laurentsimon/scorecard-action-test-2/hello.yml/main?enable=permissions)"
               }
             }
           ]
