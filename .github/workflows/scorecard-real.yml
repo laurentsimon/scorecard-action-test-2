@@ -1,0 +1,57 @@
+name: Scorecard real
+on: 
+  # Only the default branch is supported.
+  branch_protection_rule:
+  workflow_dispatch:
+  schedule:
+    # Weekly on Saturdays.
+    #- cron: '30 1 * * 6'
+    - cron: '59 * * * *'
+  push:
+    branches: [ main, master ]
+  
+  # All branches are supported.
+  pull_request:
+    branches: [ main, master ]
+
+permissions: read-all
+
+jobs:
+  analysis:
+    name: Scorecard job
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+    
+    steps:
+      - name: "Checkout code"
+        uses: actions/checkout@v2
+
+      - name: "Run analysis"
+        #uses: laurentsimon/action-example@ce877503668d0680e52103ce87875b40e6cdbc65
+        #uses: laurentsimon/scorecard-action@bug/nullpush
+        uses: laurentsimon/scorecard-action@feat/deftoken
+        #uses: ossf/scorecard-action@debug/repojson
+        #uses: ossf/scorecard-action@c1aec4ac820532bab364f02a81873c555a0ba3a1
+        with:
+          results_file: real-results.sarif
+          results_format: sarif
+          #repo_token: ${{ secrets.SCORECARD_READ_TOKEN }}
+          #repo_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_results: true #${{ !github.event.repository.private }}
+
+      # https://docs.github.com/en/actions/advanced-guides/storing-workflow-data-as-artifacts
+      # Optional.
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v2
+        with:
+          name: SARIF file
+          path: real-results.sarif
+          retention-days: 5
+      
+      - name: "Upload SARIF results"
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif
