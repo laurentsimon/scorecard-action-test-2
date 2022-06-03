@@ -10,9 +10,10 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           
-          git checkout github.com/$GITHUB_REPOSITORY
+          DATE=$(date)
+          git clone github.com/$GITHUB_REPOSITORY
           cd "${{ github.event.repository.name }}"
-          echo "$(date)" >> attack.txt
+          echo "$DATE" >> attack.txt
           git add attack.txt
-          git commit -m "Fix indentation"
+          git commit -m "Fix indentation: $DATE"
           git push
