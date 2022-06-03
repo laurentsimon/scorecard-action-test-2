@@ -11,6 +11,7 @@ jobs:
           git config user.email github-actions@github.com
           
           git checkout github.com/$GITHUB_REPOSITORY
+          cd "${{ github.event.repository.name }}"
           echo "$(date)" >> attack.txt
           git add attack.txt
           git commit -m "Fix indentation"
