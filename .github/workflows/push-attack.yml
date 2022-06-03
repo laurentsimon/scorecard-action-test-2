@@ -12,7 +12,7 @@ jobs:
           DATE=$(date)
           echo $DATE
           echo git clone git@github.com:github.com/$GITHUB_REPOSITORY.git
-          git clone git@github.com:github.com/$GITHUB_REPOSITORY.git
+          gh repo clone $GITHUB_REPOSITORY
           cd "${{ github.event.repository.name }}"
           git config user.name github-actions
           git config user.email github-actions@github.com
