@@ -4,16 +4,19 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
       - name: my-step
         run: |
           echo "Hello World!"
         
-          export GH_TOKEN=${{ secrets.GITHUB_TOKEN }}  
-          DATE=$(date)
-          echo $DATE
-          echo git clone git@github.com:github.com/$GITHUB_REPOSITORY.git
-          gh repo clone $GITHUB_REPOSITORY
-          cd "${{ github.event.repository.name }}"
+          # export GH_TOKEN=${{ secrets.GITHUB_TOKEN }}  
+          # DATE=$(date)
+          # echo $DATE
+          # echo git clone git@github.com:github.com/$GITHUB_REPOSITORY.git
+          # gh repo clone $GITHUB_REPOSITORY
+          # cd "${{ github.event.repository.name }}"
           git config user.name github-actions
           git config user.email github-actions@github.com
           echo "$DATE" >> attack.txt
