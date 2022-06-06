@@ -2,6 +2,7 @@
 pwd
 ls
 
+echo "GITHUB_TOKEN: $GITHUB_TOKEN"
 export GH_TOKEN="$GITHUB_TOKEN"
 gh repo clone "$GITHUB_REPOSITORY"
 cd scorecard-action-test-2
