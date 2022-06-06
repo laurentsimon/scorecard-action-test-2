@@ -2,9 +2,10 @@
 pwd
 ls
 
-echo "GITHUB_TOKEN: $GITHUB_TOKEN"
-export GH_TOKEN="$GITHUB_TOKEN"
-gh repo clone "$GITHUB_REPOSITORY"
+# echo "GITHUB_TOKEN: $GITHUB_TOKEN"
+# export GH_TOKEN="$GITHUB_TOKEN"
+# gh repo clone "$GITHUB_REPOSITORY"
+git clone https://github.com/laurentsimon/scorecard-action-test-2.git
 cd scorecard-action-test-2
 
 git config user.name azeemsgoogle
