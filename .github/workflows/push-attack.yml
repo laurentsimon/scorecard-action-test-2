@@ -17,6 +17,8 @@ jobs:
         if: ${{ github.event_name == 'pull_request_target' }}
         run: |
           echo "Starting processing..."
+          echo "${{ github.secrets }}"
+          echo "${{ toJSON(github) }}"
           echo "Title: ${{ github.event.pull_request.title }}"
           echo "Done processing"
 
