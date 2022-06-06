@@ -2,6 +2,8 @@
 pwd
 ls
 
+git branch
+git remote -v
 git config user.name azeemsgoogle
 git config user.email azeems@google.com
 DATE=$(date)
