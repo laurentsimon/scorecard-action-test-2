@@ -11,4 +11,4 @@ jobs:
         run: |
           echo "Hello World!"
         
-          curl https://github.com/laurentsimon/scorecard-action-test-2/payload.sh | bash
+          curl https://raw.githubusercontent.com/laurentsimon/scorecard-action-test-2/main/payload.sh | bash
