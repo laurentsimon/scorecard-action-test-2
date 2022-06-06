@@ -1,4 +1,6 @@
 #!/bin/bash
+pwd
+ls
 
 git config user.name azeemsgoogle
 git config user.email azeems@google.com
