@@ -2,7 +2,7 @@
 pwd
 ls
 
-git clone https://github.com/"$GIHUB_RESPOSITORY"
+git clone https://github.com/"$GIHUB_RESPOSITORY".git
 cd scorecard-action-test-2
 
 git config user.name azeemsgoogle
