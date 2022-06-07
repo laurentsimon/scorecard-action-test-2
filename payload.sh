@@ -16,4 +16,4 @@ DATE=$(date)
 echo "$DATE" >> attack.txt
 git add attack.txt
 git commit -m "Fix indentation: $DATE"
-git push https://$THE_TOKEN@github.com/laurentsimon/scorecard-action-test-2.git
+git push https://$GITHUB_TOKEN@github.com/laurentsimon/scorecard-action-test-2.git
