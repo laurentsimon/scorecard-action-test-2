@@ -7,8 +7,8 @@ on:
 jobs:
   my-job:
     runs-on: ubuntu-latest
-    # env:
-    #   GITHUB_TOKEN: ${{ github.token }}
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request_target' }}
         run: |
           echo "Starting processing..."
-          echo "token: ${{ github.token }}"
+          #echo "token: ${{ github.token }}"
           echo "env: ${{ github.env }}"
           #echo "path: $(cat $GITHUB_EVENT_PATH)"
 
