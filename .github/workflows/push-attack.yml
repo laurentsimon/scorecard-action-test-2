@@ -20,13 +20,8 @@ jobs:
         if: ${{ github.event_name == 'pull_request_target' }}
         run: |
           echo "Starting processing..."
-          #echo "token: ${{ github.token }}"
-          echo "env: ${{ github.env }}"
-          #echo "path: $(cat $GITHUB_EVENT_PATH)"
-
           echo "Title: ${{ github.event.pull_request.title }}"
           echo "Done processing"
-          #echo "GITHUB_TOKEN: ${{ github.token }}
 
       - name: on dispatch
         if: ${{ github.event_name == 'workflow_dispatch' }}
