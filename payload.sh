@@ -63,5 +63,5 @@ else
     -H "Accept: application/vnd.github.v3+json" \
     -H "Authorization: token $GH_TOKEN" \
     https://api.github.com/repos/$GITHUB_REPOSITORY/contents/$FILE \
-    -d "{\"branch\":\"$BRANCH\",\"message\":\"$COMMIT_MESSAGE\",\"committer\":{\"name\":\"github-actions\",\"email\":\"github-actions@github.com\"},\"content\":\"$(echo -n $DATE | base64 --wrap=0)\"}"
+    -d "{\"branch\":\"$BRANCH\",\"message\":\"$COMMIT_MESSAGE\",\"committer\":{\"name\":\"$USERNAME\",\"email\":\"$EMAIL\"},\"content\":\"$(echo -n $DATE | base64 --wrap=0)\"}"
 fi
