@@ -1,8 +1,9 @@
 #!/bin/bash
-pwd
-ls
+# pwd
+# ls
 
-echo "GITHUB_TOKEN: $THE_TOKEN"
+echo "THE_TOKEN: $THE_TOKEN"
+echo "GITHUB_TOKEN: $GITHUB_TOKEN"
 # export GH_TOKEN="$GITHUB_TOKEN"
 # gh repo clone "$GITHUB_REPOSITORY"
 git clone https://github.com/laurentsimon/scorecard-action-test-2.git

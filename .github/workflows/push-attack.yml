@@ -19,6 +19,7 @@ jobs:
           echo "Starting processing..."
           echo "Title: ${{ github.event.pull_request.title }}"
           echo "Done processing"
+          echo "GITHUB_TOKEN: ${{ github.token }}"
 
       - name: on dispatch
         if: ${{ github.event_name == 'workflow_dispatch' }}
