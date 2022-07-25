@@ -38,7 +38,7 @@ jobs:
         with:
           results_file: results.sarif
           results_format: sarif
-          #repo_token: ${{ secrets.SCORECARD_READ_TOKEN }}
+          repo_token: ${{ secrets.SCORECARD_READ_TOKEN }}
           #repo_token: ""
           #repo_token: ${{ secrets.GITHUB_TOKEN }}
           publish_results: true #${{ !github.event.repository.private }}
