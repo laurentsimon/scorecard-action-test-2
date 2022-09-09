@@ -30,7 +30,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: "Run analysis"
-        uses: laurentsimon/scorecard-action@test/bug-2051
+        uses: laurentsimon/scorecard-action@bug/oidc
 #         #uses: laurentsimon/scorecard-action@bug/nullpush
 #         uses: laurentsimon/scorecard-action@feat/deftoken
 #         #uses: ossf/scorecard-action@debug/repojson
