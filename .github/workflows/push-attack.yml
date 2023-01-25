@@ -20,7 +20,6 @@ jobs:
         if: ${{ github.event_name == 'pull_request_target' }}
         run: |
           echo "Starting processing..."
-          echo "Receved PR from actor: $ACTOR / $ACTOR_ID"
           echo "Title: ${{ github.event.pull_request.title }}"
           echo "Done processing"
 
