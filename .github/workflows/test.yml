@@ -1,4 +1,4 @@
-name: test #1076
+name: debug 1076
 on: workflow_dispatch
 
 permissions: read-all
