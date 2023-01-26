@@ -18,6 +18,9 @@ jobs:
           chmod u+x scorecard-linux-amd64
           curl https://github.com/ossf/scorecard-action/blob/main/policies/template.yml > policy.yml
           
+          echo "POLICY:"
+          cat ./policy.yml
+          
           echo "SARIF run:"
           ./scorecard-linux-amd64 --repo=deislabs/ratify --format sarif --show-details  --policy ./policy.yml | jq
           
