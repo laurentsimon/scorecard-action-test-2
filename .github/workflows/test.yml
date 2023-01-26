@@ -16,7 +16,7 @@ jobs:
           gh -R ossf/scorecard release download v4.10.2 -p "scorecard_4.10.2_linux_amd64.tar.gz"
           tar xvzf scorecard_4.10.2_linux_amd64.tar.gz
           chmod u+x scorecard-linux-amd64
-          curl https://github.com/ossf/scorecard-action/blob/main/policies/template.yml > policy.yml
+          curl https://raw.githubusercontent.com/ossf/scorecard-action/main/policies/template.yml > policy.yml
           
           echo "POLICY:"
           cat ./policy.yml
