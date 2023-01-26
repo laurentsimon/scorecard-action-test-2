@@ -1,0 +1,25 @@
+name: test #1076
+on: workflow_dispatch
+
+permissions: read-all
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ENABLE_SARIF: 1
+          SCORECARD_EXPERIMENTAL: 1
+        run: |
+          gh -R ossf/scorecard release download v4.10.2 -p "scorecard_4.10.2_linux_amd64.tar.gz"
+          tar xvzf scorecard_4.10.2_linux_amd64.tar.gz
+          chmod u+x scorecard-linux-amd64
+          curl https://github.com/ossf/scorecard-action/blob/main/policies/template.yml > policy.yml
+          
+          echo "SARIF run:"
+          ./scorecard-linux-amd64 --repo=deislabs/ratify --format sarif --show-details  --policy ./policy.yml | jq
+          
+          echo "JSON run:"
+          ./scorecard-linux-amd64 --repo=deislabs/ratify --format json --show-details  --policy ./policy.yml | jq
