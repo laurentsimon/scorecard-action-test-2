@@ -6,6 +6,11 @@ on:
       - main
 
 jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo $GITHUB_WORKFLOW_REF
   my-job:
     #name: My job name
     runs-on: ubuntu-latest
