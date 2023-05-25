@@ -58,7 +58,7 @@
                            "startLine": 1
                         },
                         "artifactLocation": {
-                           "uri": "no file associated with this alert",
+                           "uri": "no_file_associated_with_this_alert",
                            "uriBaseId": "%SRCROOT%"
                         }
                      }
@@ -1634,7 +1634,7 @@
                            "startLine": 1
                         },
                         "artifactLocation": {
-                           "uri": "no file associated with this alert",
+                           "uri": "no_file_associated_with_this_alert",
                            "uriBaseId": "%SRCROOT%"
                         }
                      }
@@ -1654,7 +1654,7 @@
                            "startLine": 1
                         },
                         "artifactLocation": {
-                           "uri": "no file associated with this alert",
+                           "uri": "no_file_associated_with_this_alert",
                            "uriBaseId": "%SRCROOT%"
                         }
                      }
@@ -1674,7 +1674,7 @@
                            "startLine": 1
                         },
                         "artifactLocation": {
-                           "uri": "no file associated with this alert",
+                           "uri": "no_file_associated_with_this_alert",
                            "uriBaseId": "%SRCROOT%"
                         }
                      }
